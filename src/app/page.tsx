@@ -1,103 +1,174 @@
-import Image from "next/image";
+"use client";
+import FooterNav from "@/components/FooterNav";
+import HeaderNav from "@/components/HeaderNav";
+import Marquee from "react-fast-marquee";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
+import { works } from "@/data/works";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="bg-white text-black">
+      <section className="max-w-7xl mx-auto py-32 px-4">
+        <h1 className="text-4xl md:text-[90px] md:leading-20 max-w-6xl">
+          ENDURING BRANDS AREN&apos;T FOUND - THEY&apos;RE FORGED.
+          <br />
+          WE HELP BRANDS BECOME TIMELESS.
+        </h1>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      {/* Slider Section */}
+      <section className="">
+        <div className="">
+          <Swiper
+            modules={[Autoplay, EffectFade]}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 1000, disableOnInteraction: false }}
+            effect="fade"
+            fadeEffect={{ crossFade: true }}
+            className=""
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            {[
+              "slide-1.png",
+              "slide-2.png",
+              "slide-3.png",
+              "slide-4.png",
+              "slide-5.png",
+            ].map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <img
+                  src={`/images/slide/${img}`}
+                  alt={`Slide ${idx + 1}`}
+                  className="w-full  object-cover"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto py-12 px-4 md:flex justify-between">
+        <div className="lg:w-[30%] mb-6 md:mb-0">
+          <img src="/images/icons/icon.svg" alt="" />
+        </div>
+        <div className="lg:w-[60%]">
+          <p className="md:text-[36px] text-lg leading-tight">
+            We partner with ambitious brands and businesses to craft timeless,
+            future-ready brands. Collaborating with visionary teams and
+            strategy-driven businesses seeking sharpen positioning, define
+            categories, and create brand expressions that unite people,
+            accelerate growth, and build lasting influence.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <Marquee autoFill={true}>
+            <p className="md:text-[72px]"> * Selected Work</p>
+          </Marquee>
+          <Marquee autoFill={true} direction="right">
+            <p className="md:text-[72px]"> * Selected Work </p>
+          </Marquee>
+        </div>
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 p-4 my-6">
+          {works.slice(0, 4).map((work) => (
+            <div key={work.title} className="">
+              <img src={work.image} alt={work.title} className="mb-4 " />
+              <h3 className="text-xl uppercase">{work.title}</h3>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <button className="border-b text-sm">SEE MORE OF OUR WORK</button>
+        </div>
+      </section>
+
+      {/* Studio Section */}
+      <section
+        id="studio"
+        className="max-w-7xl mx-auto px-4 border-t border-t-[#ECECEC] my-18 py-18"
+      >
+        <div className="md:flex justify-between">
+          <div className="text-2xl md:text-[72px] mb-4 lg:w-[30%]">STUDIO</div>
+          <div className="lg:w-[60%]">
+            <div className="mb-6 md:mb-0">
+              <p className="text-sm md:text-[36px] mb-4 leading-tight">
+                Ensio Creative is a strategy-led branding and design agency
+                helping visionary brands find clarity, build meaningful
+                connections, and drive purposeful growth.
+              </p>
+              <p className="mb-6">
+                We move with intention and think beyond trends — blending
+                strategy and design to craft timeless brand experiences. From
+                ambitious startups to established businesses, we help brands
+                spark emotion, build meaningful connections, and achieve lasting
+                growth.
+              </p>
+              <a href="#" className="underline">
+                DISCOVER MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do Section */}
+      <section className="max-w-7xl mx-auto py-12 px-4">
+        <div className="text-2xl md:text-[72px] mb-6">WHAT WE DO</div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="border border-[#ECECEC] p-6">
+            <div className="text-sm mb-2">
+              01
+              <br />
+              BRAND <br /> STRATEGY
+            </div>
+            <div className="text-xs">
+              We uncover your true strength and shape your edge with positioning
+              that defines your identity, your relevance, and your direction.
+            </div>
+          </div>
+          <div className="border border-[#ECECEC] p-6">
+            <div className="text-sm mb-2">
+              02
+              <br />
+              BRAND <br /> IDENTITY
+            </div>
+            <div className="text-xs">
+              We build scalable identity systems that make your brand clear,
+              consistent, and ready to lead with clarity and impact.
+            </div>
+          </div>
+          <div className="border border-[#ECECEC] p-6">
+            <div className="text-sm mb-2">
+              03
+              <br />
+              BRAND <br /> CULTURE
+            </div>
+            <div className="text-xs">
+              We bring your brand to life with culture strategy and tools that
+              awaken its essence inside your organization — uniting people,
+              processes, and purpose.
+            </div>
+          </div>
+          <div className="border border-[#ECECEC] p-6">
+            <div className="text-sm mb-2">
+              04
+              <br />
+              BRAND DIGITAL <br /> EXPERIENCE
+            </div>
+            <div className="text-xs">
+              We create cutting-edge brand and digital experience that engage
+              today&apos;s audiences and keep your business ahead in a
+              fast-paced world.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
