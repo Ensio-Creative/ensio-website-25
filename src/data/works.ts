@@ -35,16 +35,17 @@ export const works = [
     description: "Offshore solutions for the energy sector.",
     link: "#",
   },
-{
+  {
     title: "Bonjuli",
     image: "/images/works/bonjuli.png",
     description: "Offshore solutions for the energy sector.",
     link: "#",
   },
-{
+  {
     title: "UN Properties",
     image: "/images/works/un-properties.png",
     description: "Offshore solutions for the energy sector.",
     link: "#",
   },
+
 ];

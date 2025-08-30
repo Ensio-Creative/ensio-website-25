@@ -4,7 +4,7 @@ import React from "react";
 const work = () => {
   return (
     <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 my-6">
-      <div className="md:text-[80px] text-3xl leading-tight">
+      <div className="md:text-[70px] text-3xl leading-18 uppercase">
         Crafted Experiences
       </div>
       <div className="mt-auto">

@@ -1,6 +1,5 @@
 "use client";
-import FooterNav from "@/components/FooterNav";
-import HeaderNav from "@/components/HeaderNav";
+
 import Marquee from "react-fast-marquee";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";

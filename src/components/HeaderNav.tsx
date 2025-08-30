@@ -9,7 +9,7 @@ const HeaderNav = () => {
   return (
     <header className="max-w-7xl mx-auto flex justify-between items-center p-4 relative">
       <Link href={"/"}>
-        <div className="font-bold text-xl">EnsioCreative</div>
+        <img src="/images/ensio-creative-logo-black.svg" alt="EnsioCreative Logo" />
       </Link>
       {/* Desktop Nav */}
       <nav className="space-x-10 hidden md:flex">
