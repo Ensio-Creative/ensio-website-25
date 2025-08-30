@@ -11,7 +11,7 @@ const FooterNav = () => {
       <button className="border border-white rounded-full px-8 pt-4 pb-3 text-2xl md:text-[96px] font-medium hover:bg-white hover:text-black transition mb-8">
         LET&apos;S TALK
       </button>
-      <div className="flex justify-center space-x-12 text-sm my-10">
+      <div className="flex justify-center md:space-x-12 space-x-3 text-sm my-10">
         <a href="#" className="hover:underline">
           FACEBOOK
         </a>
