@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const studio = () => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 my-6">
+      <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 my-10">
         <div className="md:text-[70px] text-3xl uppercase md:leading-18">
           <p> Forging brands that move and endure.</p>
         </div>

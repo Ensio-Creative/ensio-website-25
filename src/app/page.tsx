@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
@@ -83,7 +84,9 @@ export default function Home() {
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="border-b text-sm">SEE MORE OF OUR WORK</button>
+          <Link href={'/work'}>
+            <button className="border-b text-sm">SEE MORE OF OUR WORK</button>
+          </Link>
         </div>
       </section>
 
@@ -108,9 +111,9 @@ export default function Home() {
                 spark emotion, build meaningful connections, and achieve lasting
                 growth.
               </p>
-              <a href="#" className="underline">
+              <Link href="/studio" className="underline">
                 DISCOVER MORE
-              </a>
+              </Link>
             </div>
           </div>
         </div>
