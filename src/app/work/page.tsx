@@ -1,4 +1,5 @@
 import { works } from "@/data/works";
+import Link from "next/link";
 import React from "react";
 
 const work = () => {
@@ -15,8 +16,10 @@ const work = () => {
         </div>
         {works.map((work) => (
           <div key={work.title} className="">
-            <img src={work.image} alt={work.title} className="mb-4 " />
-            <h3 className="text-xl uppercase">{work.title}</h3>
+            <Link href={`/work/${work.link}`}>
+              <img src={work.image} alt={work.title} className="mb-4 " />
+              <h3 className="text-xl uppercase">{work.title}</h3>
+            </Link>
           </div>
         ))}
       </div>
