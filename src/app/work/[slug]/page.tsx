@@ -1,6 +1,7 @@
 import React from "react";
 import { works } from "@/data/works";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 interface SingleWorkProps {
   params: {
@@ -8,36 +9,81 @@ interface SingleWorkProps {
   };
 }
 
-const SingleWork = ({ params }: SingleWorkProps) => {
-  const { slug } = params;
+const SingleWork = async ({ params }: SingleWorkProps) => {
+  const { slug } = await params;
   const work = works.find((w) => w.link === slug);
   if (!work) return notFound();
 
   return (
     <main className="max-w-7xl mx-auto py-16 px-4">
-      <div className="grid md:grid-cols-2 gap-4">
-        <h1 className="text-3xl md:text-[70px] mb-8">{work.title}</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+        <div>
+          <h1 className="text-3xl md:text-[70px] md:text-wrap text-nowrap mb-8">
+            {work.title}
+          </h1>
+        </div>
         <div></div>
         <img
-          src={work.image}
+          src={`/images/projects/${work.link}/cover-img.png `}
           alt={work.title}
           className="w-full h-auto mb-8 col-span-2"
         />
-        <div>
-          <p className="text-xl">PROJECT OVERVIEW</p>
+        <div className="">
+          <p className="text-xl md:text-wrap text-nowrap">PROJECT OVERVIEW</p>
+
+          <div className="md:flex flex-col justify-end h-full md:-mt-10 mt-10 w-full">
+            <p className="md:text-base text-sm md:text-wrap text-nowrap uppercase">
+              Industry <br /> {work.industry}
+            </p>
+            <p className="text-sm md:text-base uppercase md:text-wrap text-nowrap mt-4">
+              Scope of work <br /> {work.scope}
+            </p>
+          </div>
         </div>
-        <div
-          className="prose prose-lg max-w-none"
-          dangerouslySetInnerHTML={{ __html: work.description }}
-        />
-        {work.images.map((single, index) => (
-          <img
-            key={index}
-            className={`${single.class} w-full`}
-            src={`/images/projects/${work.link}/${single.name}.png`}
-            alt=""
+        <div className="h-full md:mt-0 mt-44 md:text-base text-sm">
+          <div
+            className="prose prose-lg max-w-none"
+            dangerouslySetInnerHTML={{ __html: work.description }}
           />
-        ))}
+        </div>
+        {work.images.map(
+          (single: { class: string; name: string }, index: number) => (
+            <div key={index} className={`${single.class} w-full md:my-0 my-2`}>
+              <img
+                className="w-full object-cover"
+                src={`/images/projects/${work.link}/${single.name}.png`}
+                alt=""
+              />
+            </div>
+          )
+        )}
+      </div>
+      <div className="mt-16">
+        {/* Next Project Preview */}
+        {(() => {
+          const currentIndex = works.findIndex((w) => w.link === slug);
+          const nextIndex = (currentIndex + 1) % works.length;
+          const nextWork = works[nextIndex];
+          if (!nextWork || nextWork.link === slug) return null;
+          return (
+            <Link
+              href={`/work/${nextWork.link}`}
+              className="block group py-12 border-t border-t-[#ECECEC]"
+            >
+              <div className="">
+                <span className="text-lg md:text-2xl">
+                  Next Project - {nextWork.title}
+                </span>
+
+                <img
+                  src={`/images/projects/${nextWork.link}/cover-img.png`}
+                  alt={nextWork.title}
+                  className="object-cover my-4"
+                />
+              </div>
+            </Link>
+          );
+        })()}
       </div>
     </main>
   );

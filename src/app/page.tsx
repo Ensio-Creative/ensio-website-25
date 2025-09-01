@@ -78,13 +78,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 p-4 my-6">
           {works.slice(0, 4).map((work) => (
             <div key={work.title} className="">
-              <img src={work.image} alt={work.title} className="mb-4 " />
-              <h3 className="text-xl uppercase">{work.title}</h3>
+              <Link href={`/work/${work.link}`}>
+                <img src={work.image} alt={work.title} className="mb-4 " />
+                <h3 className="text-xl uppercase">{work.title}</h3>
+              </Link>
             </div>
           ))}
         </div>
         <div className="text-center mt-8">
-          <Link href={'/work'}>
+          <Link href={"/work"}>
             <button className="border-b text-sm">SEE MORE OF OUR WORK</button>
           </Link>
         </div>
