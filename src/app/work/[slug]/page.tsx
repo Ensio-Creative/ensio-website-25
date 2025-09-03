@@ -9,7 +9,7 @@ interface SingleWorkProps {
   };
 }
 
-const SingleWork = async ({ params }: SingleWorkProps) => {
+const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const work = works.find((w) => w.link === slug);
   if (!work) return notFound();
