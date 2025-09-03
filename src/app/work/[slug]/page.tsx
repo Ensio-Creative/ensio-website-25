@@ -16,7 +16,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
 
   return (
     <main className="max-w-7xl mx-auto py-16 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+      <div className="lg:grid lg:grid-cols-2 md:gap-4">
         <div>
           <h1 className="text-3xl md:text-[70px] md:text-wrap text-nowrap mb-8">
             {work.title}
@@ -35,12 +35,12 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
             <p className="md:text-base text-sm md:text-wrap text-nowrap uppercase">
               Industry <br /> {work.industry}
             </p>
-            <p className="text-sm md:text-base uppercase md:text-wrap text-nowrap mt-4">
+            <p className="text-sm md:text-base uppercase md:text-wrap text-pretty mt-4">
               Scope of work <br /> {work.scope}
             </p>
           </div>
         </div>
-        <div className="h-full md:mt-0 mt-44 md:text-base text-sm">
+        <div className="h-full md:mt-0 mt-4 md:text-base text-sm">
           <div
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{ __html: work.description }}
@@ -48,7 +48,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
         </div>
         {work.images.map(
           (single: { class: string; name: string }, index: number) => (
-            <div key={index} className={`${single.class} w-full md:my-0 my-2`}>
+            <div key={index} className={`${single.class} w-full md:my-0 my-3`}>
               <img
                 className="w-full object-cover"
                 src={`/images/projects/${work.link}/${single.name}.png`}
