@@ -15,10 +15,10 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
   if (!work) return notFound();
 
   return (
-    <main className="max-w-7xl mx-auto py-16 px-4">
+    <main className="max-w-7xl mx-auto pt-[100px] pb-16 px-4">
       <div className="lg:grid lg:grid-cols-2 md:gap-4">
         <div>
-          <h1 className="text-3xl md:text-[70px] md:text-wrap text-nowrap mb-8">
+          <h1 className="text-3xl md:text-[70px] md:text-wrap uppercase text-nowrap mb-8">
             {work.title}
           </h1>
         </div>
@@ -26,10 +26,10 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
         <img
           src={`/images/projects/${work.link}/cover-img.png `}
           alt={work.title}
-          className="w-full h-auto mb-8 col-span-2"
+          className="w-full h-auto mb-12 col-span-2"
         />
-        <div className="">
-          <p className="text-xl md:text-wrap text-nowrap">PROJECT OVERVIEW</p>
+        <div className="md:mb-12">
+          <p className="text-lg md:text-wrap text-nowrap">PROJECT OVERVIEW</p>
 
           <div className="md:flex flex-col justify-end h-full md:-mt-10 mt-10 w-full">
             <p className="md:text-base text-sm md:text-wrap text-nowrap uppercase">
@@ -40,7 +40,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
             </p>
           </div>
         </div>
-        <div className="h-full md:mt-0 mt-4 md:text-base text-sm">
+        <div className="h-full md:mt-0 mt-4 md:mb-12 md:text-base text-sm">
           <div
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{ __html: work.description }}
@@ -58,7 +58,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
           )
         )}
       </div>
-      <div className="mt-16">
+      <div className="mt-32">
         {/* Next Project Preview */}
         {(() => {
           const currentIndex = works.findIndex((w) => w.link === slug);

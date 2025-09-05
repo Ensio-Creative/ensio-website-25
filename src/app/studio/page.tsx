@@ -1,14 +1,15 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 
 const studio = () => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 my-10">
+      <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 my-[100px]">
         <div className="md:text-[70px] text-3xl uppercase md:leading-18">
           <p> Forging brands that move and endure.</p>
         </div>
-        <div className="">
+        <div className="text-lg">
           We’re a strategy-led branding and design agency helping ambitious
           brands cut through the noise and stay relevant for years to come.
           Whether launching something new or redefining what already exists, we
@@ -35,12 +36,12 @@ const studio = () => {
       </div>
 
       {/* Services Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl md:text-[70px] mb-10 uppercase">
+      <div className="max-w-7xl mx-auto px-4 py-[100px]">
+        <h2 className="text-3xl md:text-[70px] mb-10 uppercase md:leading-18">
           Our <br /> Services
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="col-span-2 grid md:grid-cols-2 border-y border-y-[#ECECEC] py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="col-span-2 grid md:grid-cols-2 border-y border-y-[#ECECEC] py-12">
             <span className="text-xl font-bold tracking-widest">
               01 BRAND STRATEGY
             </span>
@@ -54,7 +55,7 @@ const studio = () => {
               <li>DIGITAL STRATEGY</li>
             </ul>
           </div>
-          <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-8">
+          <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-12">
             <span className="text-xl font-bold tracking-widest">
               02 BRAND IDENTITY
             </span>
@@ -69,7 +70,7 @@ const studio = () => {
               <li>MOTION DESIGN</li>
             </ul>
           </div>
-          <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-8">
+          <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-12">
             <span className="text-xl font-bold tracking-widest">
               03 BRAND CULTURE
             </span>
@@ -81,7 +82,7 @@ const studio = () => {
               <li>BRAND TRAINING</li>
             </ul>
           </div>
-          <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-8">
+          <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-12">
             <span className="text-xl font-bold tracking-widest">
               04 BRAND DIGITAL EXPERIENCE
             </span>
@@ -108,13 +109,13 @@ const studio = () => {
             <img
               src="/images/founders/gabriel.png"
               alt="Gabriel Ugochukwu"
-              className="w-full h-96 object-cover mb-4"
+              className="w-full h-[500px] object-cover mb-4"
             />
             <div className="">
-              <div className="font-bold tracking-widest">
+              <div className="font-bold text-xl tracking-widest">
                 GABRIEL UGOCHUKWU
               </div>
-              <div className="text-xs text-gray-500">
+              <div className="text-lg text-gray-500">
                 FOUNDER & STRATEGY DIRECTOR
               </div>
             </div>
@@ -123,23 +124,26 @@ const studio = () => {
             <img
               src="/images/founders/rhema.png"
               alt="Rhema Borico"
-              className="w-full h-96 object-cover mb-4"
+              className="w-full h-[500px] object-cover mb-4"
             />
             <div className="">
-              <div className="font-bold tracking-widest">
+              <div className="font-bold text-xl tracking-widest">
                 RHEMA BORICO
               </div>
-              <div className="text-xs text-gray-500">CO-FOUNDER</div>
+              <div className="text-lg text-gray-500">CO-FOUNDER</div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Our Work Button Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="bg-gray-100 py-16 flex justify-center items-center">
-          <span className="text-3xl md:text-5xl font-bold">OUR WORK</span>
-        </div>
+
+      <div className="max-w-7xl mx-auto px-4 pb-16 py-10">
+        <Link href="/work">
+          <div className="bg-gray-100 h-[500px] flex justify-center items-center">
+            <span className="text-3xl md:text-[90px] font-bold">OUR WORK</span>
+          </div>
+        </Link>
       </div>
     </div>
   );

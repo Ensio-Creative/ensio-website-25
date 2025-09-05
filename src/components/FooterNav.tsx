@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterNav = () => {
   return (
-    <footer id="contact" className="bg-black text-white py-16 px-6 text-center">
+    <footer id="contact" className="bg-black text-white mt-[90px] py-32 px-6 text-center">
       <div className="text-3xl md:text-[90px] mb-4">
         HAVE
         <br />
@@ -25,7 +25,7 @@ const FooterNav = () => {
           LINKEDIN
         </a>
       </div>
-      <div className="text-sm text-[#ABB8C3] border-t border-[#272727] pt-14">
+      <div className="text-sm  border-t border-[#272727] pt-14">
         © 2025 Ensio Creative. All Rights Reserved.
       </div>
     </footer>

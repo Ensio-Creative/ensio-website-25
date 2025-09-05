@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto py-12 px-4 md:flex justify-between">
+      <section className="max-w-7xl mx-auto py-32 px-4 md:flex justify-between">
         <div className="lg:w-[30%] mb-6 md:mb-0">
           <img src="/images/icons/icon.svg" alt="" />
         </div>
@@ -69,10 +69,10 @@ export default function Home() {
       <section>
         <div>
           <Marquee autoFill={true}>
-            <p className="md:text-[72px]"> * Selected Work</p>
+            <p className="md:text-[90px] uppercase">* Selected Work</p>
           </Marquee>
           <Marquee autoFill={true} direction="right">
-            <p className="md:text-[72px]"> * Selected Work </p>
+            <p className="md:text-[90px] uppercase">* Selected Work</p>
           </Marquee>
         </div>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 p-4 my-6">
@@ -101,20 +101,20 @@ export default function Home() {
           <div className="text-2xl md:text-[72px] mb-4 lg:w-[30%]">STUDIO</div>
           <div className="lg:w-[60%]">
             <div className="mb-6 md:mb-0">
-              <p className="text-sm md:text-[36px] mb-4 leading-tight">
+              <p className="text-sm md:text-[36px] leading-tight">
                 Ensio Creative is a strategy-led branding and design agency
                 helping visionary brands find clarity, build meaningful
                 connections, and drive purposeful growth.
               </p>
-              <p className="mb-6">
+              <p className="my-8 text-lg">
                 We move with intention and think beyond trends — blending
                 strategy and design to craft timeless brand experiences. From
                 ambitious startups to established businesses, we help brands
                 spark emotion, build meaningful connections, and achieve lasting
                 growth.
               </p>
-              <Link href="/studio" className="underline">
-                DISCOVER MORE
+              <Link href="/studio">
+                <button className="border-b text-sm">DISCOVER MORE</button>
               </Link>
             </div>
           </div>
@@ -126,46 +126,50 @@ export default function Home() {
         <div className="text-2xl md:text-[72px] mb-6">WHAT WE DO</div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="border border-[#ECECEC] p-6">
-            <div className="text-sm mb-2">
+            <div className="text-xl mb-2">
               01
+              <br />
               <br />
               BRAND <br /> STRATEGY
             </div>
-            <div className="text-xs">
+            <div className="text-lg mt-4">
               We uncover your true strength and shape your edge with positioning
               that defines your identity, your relevance, and your direction.
             </div>
           </div>
           <div className="border border-[#ECECEC] p-6">
-            <div className="text-sm mb-2">
+            <div className="text-xl mb-2">
               02
+              <br />
               <br />
               BRAND <br /> IDENTITY
             </div>
-            <div className="text-xs">
+            <div className="text-lg mt-4">
               We build scalable identity systems that make your brand clear,
               consistent, and ready to lead with clarity and impact.
             </div>
           </div>
           <div className="border border-[#ECECEC] p-6">
-            <div className="text-sm mb-2">
+            <div className="text-xl mb-2">
               03
+              <br />
               <br />
               BRAND <br /> CULTURE
             </div>
-            <div className="text-xs">
+            <div className="text-lg mt-4">
               We bring your brand to life with culture strategy and tools that
               awaken its essence inside your organization — uniting people,
               processes, and purpose.
             </div>
           </div>
           <div className="border border-[#ECECEC] p-6">
-            <div className="text-sm mb-2">
+            <div className="text-xl mb-2">
               04
+              <br />
               <br />
               BRAND DIGITAL <br /> EXPERIENCE
             </div>
-            <div className="text-xs">
+            <div className="text-lg mt-4">
               We create cutting-edge brand and digital experience that engage
               today&apos;s audiences and keep your business ahead in a
               fast-paced world.

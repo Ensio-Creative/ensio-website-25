@@ -8,11 +8,12 @@ const HeaderNav = () => {
 
   return (
     <div className="w-full bg-white sticky top-0 z-50">
-      <header className="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <header className="max-w-7xl mx-auto flex justify-between items-center px-4 py-6">
         <Link href={"/"}>
           <img
             src="/images/ensio-creative-logo-black.svg"
             alt="EnsioCreative Logo"
+            className="my-auto"
           />
         </Link>
         {/* Desktop Nav */}

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const ContactPage = () => (
   <main className="bg-white min-h-screen text-black">
@@ -29,20 +30,20 @@ const ContactPage = () => (
             +234 703 964 4259
           </a>
         </div>
-        <p className="text-sm text-gray-700">
+        <p className="md:text-lg text-gray-700">
           We are a 100% remote agency, collaborating with clients worldwide.
         </p>
       </div>
     </section>
 
     {/* Our Work Button Section */}
-    <section className="max-w-7xl mx-auto px-6 py-16">
-      <div className="bg-gray-100 py-16 flex justify-center items-center">
-        <span className="text-3xl md:text-5xl font-bold tracking-wide">
-          OUR WORK
-        </span>
-      </div>
-    </section>
+    <div className="max-w-7xl mx-auto px-4 pb-16 py-10">
+      <Link href="/work">
+        <div className="bg-gray-100 h-[500px] flex justify-center items-center">
+          <span className="text-3xl md:text-[90px] font-bold">OUR WORK </span>
+        </div>
+      </Link>
+    </div>
   </main>
 );
 
