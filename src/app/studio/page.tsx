@@ -1,3 +1,6 @@
+export const metadata = {
+  title: "Studio | Ensio Creative - Branding and Design Agency",
+};
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Link from "next/link";

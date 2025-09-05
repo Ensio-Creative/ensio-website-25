@@ -1,3 +1,19 @@
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const { slug } = await params;
+  const titles: Record<string, string> = {
+    "doklus-green": "Doklus Green | Ensio Creative - Branding and Design Agency",
+    "tescat-engineering": "Tescat Engineering | Ensio Creative - Branding and Design Agency",
+    "emmproff-integrated": "Emmproff Integrated | Ensio Creative - Branding and Design Agency",
+    "south-atlantic-offshore": "South Atlantic Offshore | Ensio Creative - Branding and Design Agency",
+    "vicmorrow-foundation": "Vicmorrow Foundation | Ensio Creative - Branding and Design Agency",
+    "nonyworld-global-resources": "Nonyworld Global Resources | Ensio Creative - Branding and Design Agency",
+    "bonjuli": "BonJuli | Ensio Creative - Branding and Design Agency",
+    "un-properties": "UN Properties | Ensio Creative - Branding and Design Agency",
+  };
+  return {
+    title: titles[slug] || "Work | Ensio Creative - Branding and Design Agency",
+  };
+}
 import React from "react";
 import { works } from "@/data/works";
 import { notFound } from "next/navigation";

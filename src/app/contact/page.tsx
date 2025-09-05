@@ -1,3 +1,6 @@
+export const metadata = {
+  title: "Contact | Ensio Creative - Branding and Design Agency",
+};
 import React from "react";
 import Link from "next/link";
 

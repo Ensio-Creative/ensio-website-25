@@ -1,6 +1,11 @@
+
 import { works } from "@/data/works";
 import Link from "next/link";
 import React from "react";
+
+export const metadata = {
+  title: "Work | Ensio Creative - Branding and Design Agency",
+};
 
 const work = () => {
   return (
