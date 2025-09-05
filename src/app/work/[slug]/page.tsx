@@ -92,7 +92,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
                 </span>
 
                 <img
-                  src={`/images/projects/${nextWork.link}/cover-img.png`}
+                  src={`/images/projects/${nextWork.link}/next-project.png`}
                   alt={nextWork.title}
                   className="object-cover my-4"
                 />

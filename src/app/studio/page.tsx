@@ -28,7 +28,7 @@ const studio = () => {
       </div>
       <div>
         <Marquee>
-          {[1, 2, 3, 4, 5].map((item) => (
+          {[1, 2, 3, 4, 5, 6].map((item) => (
             <img
               className="mx-2"
               key={item}
