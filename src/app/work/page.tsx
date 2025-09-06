@@ -1,4 +1,3 @@
-
 import { works } from "@/data/works";
 import Link from "next/link";
 import React from "react";
@@ -10,8 +9,8 @@ export const metadata = {
 const work = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 my-[100px]">
-        <div className="md:text-[70px] text-3xl leading-18 uppercase md:mb-[70px]">
+      <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 md:my-[100px] my-[60px]">
+        <div className="md:text-[70px] text-[50px] md:leading-18 leading-10 uppercase md:mb-[70px]">
           Crafted Experiences
         </div>
         <div className="mt-auto text-lg md:mb-[70px]">
@@ -28,10 +27,13 @@ const work = () => {
           </div>
         ))}
       </div>
-      <div className="max-w-7xl mx-auto px-4 pb-16 py-10">
+
+      <div className="max-w-7xl mx-auto px-4 md:pb-16 md:py-10">
         <Link href="/studio">
           <div className="bg-gray-100 h-[500px] flex justify-center items-center">
-            <span className="text-3xl md:text-[90px] font-bold">STUDIO</span>
+            <span className="text-[40px] md:text-[90px] font-bold">
+              STUDIO
+            </span>
           </div>
         </Link>
       </div>

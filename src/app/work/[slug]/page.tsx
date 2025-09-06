@@ -31,10 +31,10 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
   if (!work) return notFound();
 
   return (
-    <main className="max-w-7xl mx-auto pt-[100px] pb-16 px-4">
+    <main className="max-w-7xl mx-auto md:pt-[100px] pt-[60px] md:pb-16 px-4">
       <div className="lg:grid lg:grid-cols-2 md:gap-4">
         <div>
-          <h1 className="text-3xl md:text-[70px] md:text-wrap uppercase text-nowrap mb-8">
+          <h1 className="text-[50px] md:text-[70px] uppercase md:leading-18 leading-10 mb-8">
             {work.title}
           </h1>
         </div>
@@ -42,9 +42,9 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
         <img
           src={`/images/projects/${work.link}/cover-img.png `}
           alt={work.title}
-          className="w-full h-auto mb-12 col-span-2"
+          className="w-full md:h-auto object-cover h-80 mb-12 col-span-2"
         />
-        <div className="md:mb-12">
+        <div className="md:mb-12 mb-10">
           <p className="text-lg md:text-wrap text-nowrap">PROJECT OVERVIEW</p>
 
           <div className="md:flex flex-col justify-end h-full md:-mt-10 mt-10 w-full">
@@ -56,7 +56,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
             </p>
           </div>
         </div>
-        <div className="h-full md:mt-0 mt-4 md:mb-12 md:text-base text-sm">
+        <div className="h-full md:mt-0 mt-4 mb-12 md:text-base text-sm">
           <div
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{ __html: work.description }}
@@ -74,7 +74,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
           )
         )}
       </div>
-      <div className="mt-32">
+      <div className="md:mt-32 mt-14">
         {/* Next Project Preview */}
         {(() => {
           const currentIndex = works.findIndex((w) => w.link === slug);
@@ -84,7 +84,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
           return (
             <Link
               href={`/work/${nextWork.link}`}
-              className="block group py-12 border-t border-t-[#ECECEC]"
+              className="block group pt-12 md:pb-12 border-t border-t-[#ECECEC]"
             >
               <div className="">
                 <span className="text-lg md:text-2xl">
@@ -94,7 +94,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
                 <img
                   src={`/images/projects/${nextWork.link}/next-project.png`}
                   alt={nextWork.title}
-                  className="object-cover my-4"
+                  className="object-cover my-4 md:h-auto h-52"
                 />
               </div>
             </Link>

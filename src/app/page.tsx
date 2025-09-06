@@ -13,10 +13,10 @@ import { works } from "@/data/works";
 export default function Home() {
   return (
     <main className="bg-white text-black">
-      <section className="max-w-7xl mx-auto py-32 px-4">
-        <h1 className="text-4xl md:text-[90px] md:leading-20 max-w-6xl">
-          ENDURING BRANDS AREN&apos;T FOUND - THEY&apos;RE FORGED.
-          <br />
+      <section className="max-w-7xl mx-auto md:py-32 py-18 px-4">
+        <h1 className="text-[40px] md:text-[90px] md:leading-20 max-w-6xl">
+          ENDURING BRANDS AREN&apos;T FOUND - THEY&apos;RE FORGED. {" "}
+          <br className="hidden md:block" />
           WE HELP BRANDS BECOME TIMELESS.
         </h1>
       </section>
@@ -44,7 +44,7 @@ export default function Home() {
                 <img
                   src={`/images/slide/${img}`}
                   alt={`Slide ${idx + 1}`}
-                  className="w-full  object-cover"
+                  className="w-full md:h-full h-80 object-cover"
                 />
               </SwiperSlide>
             ))}
@@ -52,12 +52,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto py-32 px-4 md:flex justify-between">
+      <section className="max-w-7xl mx-auto md:py-32 py-20 px-4 md:flex justify-between">
         <div className="lg:w-[30%] mb-6 md:mb-0">
-          <img src="/images/icons/icon.svg" alt="" />
+          <img className="md:w-full w-24" src="/images/icons/icon.svg" alt="" />
         </div>
         <div className="lg:w-[60%]">
-          <p className="md:text-[36px] text-lg leading-tight">
+          <p className="md:text-[36px] text-[24px] leading-tight">
             We partner with ambitious brands and businesses to craft timeless,
             future-ready brands. Collaborating with visionary teams and
             strategy-driven businesses seeking sharpen positioning, define
@@ -70,10 +70,10 @@ export default function Home() {
       <section>
         <div>
           <Marquee autoFill={true}>
-            <p className="md:text-[90px] uppercase">* Selected Work</p>
+            <p className="md:text-[90px] text-[45px] uppercase">* Selected Work</p>
           </Marquee>
           <Marquee autoFill={true} direction="right">
-            <p className="md:text-[90px] uppercase">* Selected Work</p>
+            <p className="md:text-[90px] text-[45px] uppercase">* Selected Work</p>
           </Marquee>
         </div>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 p-4 my-6">
@@ -96,13 +96,13 @@ export default function Home() {
       {/* Studio Section */}
       <section
         id="studio"
-        className="max-w-7xl mx-auto px-4 border-t border-t-[#ECECEC] my-18 py-18"
+        className="max-w-7xl mx-auto px-4 border-t border-t-[#ECECEC] my-18 md:py-18 py-14"
       >
         <div className="md:flex justify-between">
-          <div className="text-2xl md:text-[72px] mb-4 lg:w-[30%]">STUDIO</div>
+          <div className="text-[35px] md:text-[72px] mb-4 lg:w-[30%]">STUDIO</div>
           <div className="lg:w-[60%]">
             <div className="mb-6 md:mb-0">
-              <p className="text-sm md:text-[36px] leading-tight">
+              <p className="text-2xl md:text-[36px] leading-tight">
                 Ensio Creative is a strategy-led branding and design agency
                 helping visionary brands find clarity, build meaningful
                 connections, and drive purposeful growth.
@@ -123,8 +123,8 @@ export default function Home() {
       </section>
 
       {/* What We Do Section */}
-      <section className="max-w-7xl mx-auto py-12 px-4">
-        <div className="text-2xl md:text-[72px] mb-6">WHAT WE DO</div>
+      <section className="max-w-7xl mx-auto md:py-12 px-4">
+        <div className="text-[35px] md:text-[72px] mb-6">WHAT WE DO</div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="border border-[#ECECEC] p-6">
             <div className="text-xl mb-2">

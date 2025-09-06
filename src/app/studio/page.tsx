@@ -8,8 +8,8 @@ import Link from "next/link";
 const studio = () => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 my-[100px]">
-        <div className="md:text-[70px] text-3xl uppercase md:leading-18">
+      <div className="max-w-7xl mx-auto grid p-4 lg:grid-cols-2 gap-8 md:my-[100px] my-[60px]">
+        <div className="md:text-[70px] text-[50px] uppercase md:leading-18 leading-10">
           <p> Forging brands that move and endure.</p>
         </div>
         <div className="text-lg">
@@ -39,16 +39,16 @@ const studio = () => {
       </div>
 
       {/* Services Section */}
-      <div className="max-w-7xl mx-auto px-4 py-[100px]">
-        <h2 className="text-3xl md:text-[70px] mb-10 uppercase md:leading-18">
+      <div className="max-w-7xl mx-auto px-4 md:py-[100px] py-[80px]">
+        <h2 className="text-[35px] md:text-[70px] mb-10 uppercase md:leading-18 leading-10">
           Our <br /> Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="col-span-2 grid md:grid-cols-2 border-y border-y-[#ECECEC] py-12">
-            <span className="text-xl font-bold tracking-widest">
+            <span className="text-xl md:mb-0 mb-4 font-bold tracking-widest">
               01 BRAND STRATEGY
             </span>
-            <ul className="mt-2 space-y-1 md:text-[30px] text-lg font-normal">
+            <ul className="mt-2 space-y-1 md:text-[30px] text-xl font-normal">
               <li>BRAND POSITIONING</li>
               <li>BRAND NAMING</li>
               <li>BRAND STORYTELLING</li>
@@ -59,10 +59,10 @@ const studio = () => {
             </ul>
           </div>
           <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-12">
-            <span className="text-xl font-bold tracking-widest">
+            <span className="text-xl md:mb-0 mb-4 font-bold tracking-widest">
               02 BRAND IDENTITY
             </span>
-            <ul className="mt-2 space-y-1 text-lg md:text-[30px] font-normal">
+            <ul className="mt-2 space-y-1 text-xl md:text-[30px] font-normal">
               <li>BRAND IDENTITY DESIGN</li>
               <li>VERBAL IDENTITY</li>
               <li>BRAND & PRODUCT NAMING</li>
@@ -74,10 +74,10 @@ const studio = () => {
             </ul>
           </div>
           <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-12">
-            <span className="text-xl font-bold tracking-widest">
+            <span className="text-xl md:mb-0 mb-4 font-bold tracking-widest">
               03 BRAND CULTURE
             </span>
-            <ul className="mt-2 space-y-1 md:text-[30px] text-lg font-normal">
+            <ul className="mt-2 space-y-1 md:text-[30px] text-xl font-normal">
               <li>CULTURE STRATEGY</li>
               <li>CORE VALUES & BEHAVIORS</li>
               <li>EMPLOYEE EXPERIENCE DESIGN</li>
@@ -86,10 +86,10 @@ const studio = () => {
             </ul>
           </div>
           <div className="col-span-2 grid md:grid-cols-2 border-b border-b-[#ECECEC] py-12">
-            <span className="text-xl font-bold tracking-widest">
+            <span className="text-xl md:mb-0 mb-4 font-bold tracking-widest">
               04 BRAND DIGITAL EXPERIENCE
             </span>
-            <ul className="mt-2 space-y-1 md:text-[30px] text-lg font-normal">
+            <ul className="mt-2 space-y-1 md:text-[30px] text-xl font-normal">
               <li>USER INTERFACE DESIGN</li>
               <li>USER EXPERIENCE DESIGN</li>
               <li>WEB DESIGN & DEVELOPMENT</li>
@@ -101,10 +101,10 @@ const studio = () => {
       </div>
 
       {/* Founders Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 md:py-16 ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
-            <h2 className="text-3xl md:text-[70px] md:leading-18 uppercase">
+            <h2 className="text-[35px] md:text-[70px] md:leading-18 leading-10 uppercase">
               Meet the Founders
             </h2>
           </div>
@@ -141,10 +141,10 @@ const studio = () => {
 
       {/* Our Work Button Section */}
 
-      <div className="max-w-7xl mx-auto px-4 pb-16 py-10">
+      <div className="max-w-7xl mx-auto px-4 md:pb-16 md:py-10">
         <Link href="/work">
           <div className="bg-gray-100 h-[500px] flex justify-center items-center">
-            <span className="text-3xl md:text-[90px] font-bold">OUR WORK</span>
+            <span className="text-[40px] md:text-[90px] font-bold">OUR WORK</span>
           </div>
         </Link>
       </div>
