@@ -1,17 +1,54 @@
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+import { Metadata } from 'next';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
-  const titles: Record<string, string> = {
-    "doklus-green": "Doklus Green | Ensio Creative - Branding and Design Agency",
-    "tescat-engineering": "Tescat Engineering | Ensio Creative - Branding and Design Agency",
-    "emmproff-integrated": "Emmproff Integrated | Ensio Creative - Branding and Design Agency",
-    "south-atlantic-offshore": "South Atlantic Offshore | Ensio Creative - Branding and Design Agency",
-    "vicmorrow-foundation": "Vicmorrow Foundation | Ensio Creative - Branding and Design Agency",
-    "nonyworld-global-resources": "Nonyworld Global Resources | Ensio Creative - Branding and Design Agency",
-    "bonjuli": "BonJuli | Ensio Creative - Branding and Design Agency",
-    "un-properties": "UN Properties | Ensio Creative - Branding and Design Agency",
+  interface ProjectMetadata {
+    title: string;
+    description: string;
+  }
+
+  const metadata: Record<string, ProjectMetadata> = {
+    "doklus-green": {
+      title: "Doklus Green | Ensio Creative - Branding and Design Agency",
+      description: "Discover our branding work for Doklus Green - Innovative sustainable solutions through creative design.",
+    },
+    "tescat-engineering": {
+      title: "Tescat Engineering | Ensio Creative - Branding and Design Agency",
+      description: "Explore our branding project for Tescat Engineering - Engineering excellence through visual identity.",
+    },
+    "emmproff-integrated": {
+      title: "Emmproff Integrated | Ensio Creative - Branding and Design Agency",
+      description: "View our comprehensive branding work for Emmproff Integrated - Transforming businesses through design.",
+    },
+    "south-atlantic-offshore": {
+      title: "South Atlantic Offshore | Ensio Creative - Branding and Design Agency",
+      description: "See how we helped South Atlantic Offshore establish a powerful brand identity in the maritime sector.",
+    },
+    "vicmorrow-foundation": {
+      title: "Vicmorrow Foundation | Ensio Creative - Branding and Design Agency",
+      description: "Learn about our branding project for Vicmorrow Foundation - Making an impact through purposeful design.",
+    },
+    "nonyworld-global-resources": {
+      title: "Nonyworld Global Resources | Ensio Creative - Branding and Design Agency",
+      description: "Discover our brand development work for Nonyworld Global Resources - Connecting resources worldwide.",
+    },
+    "bonjuli": {
+      title: "BonJuli | Ensio Creative - Branding and Design Agency",
+      description: "Experience our creative branding solution for BonJuli - Where style meets innovation.",
+    },
+    "un-properties": {
+      title: "UN Properties | Ensio Creative - Branding and Design Agency",
+      description: "View our brand identity work for UN Properties - Elevating real estate through design.",
+    },
   };
+
   return {
-    title: titles[slug] || "Work | Ensio Creative - Branding and Design Agency",
+    title: metadata[slug]?.title || "Work | Ensio Creative - Branding and Design Agency",
+    description: metadata[slug]?.description || "Explore our portfolio of branding and design projects at Ensio Creative.",
   };
 }
 import React from "react";
