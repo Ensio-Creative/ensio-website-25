@@ -49,10 +49,10 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
 
           <div className="md:flex flex-col justify-end h-full md:-mt-10 mt-10 w-full">
             <p className="md:text-base text-sm md:text-wrap text-nowrap uppercase">
-              Industry <br /> {work.industry}
+              <strong>Industry</strong> <br /> {work.industry}
             </p>
             <p className="text-sm md:text-base uppercase md:text-wrap text-pretty mt-4">
-              Scope of work <br /> {work.scope}
+              <strong>Scope of work</strong> <br /> {work.scope}
             </p>
           </div>
         </div>

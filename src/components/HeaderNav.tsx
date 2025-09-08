@@ -54,8 +54,17 @@ const HeaderNav = () => {
         {/* Mobile Menu Overlay */}
         {menuOpen && (
           <div className="fixed inset-0 bg-white z-50 flex flex-col">
-            <div className="flex justify-between items-center p-4">
-              <div className="font-bold text-xl">EnsioCreative</div>
+            <div className="flex justify-between items-center px-4 py-8">
+
+              <Link href={"/"}
+                onClick={() => setMenuOpen(false)}
+              >
+                <img
+                  src="/images/ensio-creative-logo-black.svg"
+                  alt="EnsioCreative Logo"
+                  className="my-auto"
+                />
+              </Link>
               <button
                 className="text-base font-medium flex items-center"
                 onClick={() => setMenuOpen(false)}
@@ -80,28 +89,28 @@ const HeaderNav = () => {
             <div className="flex-1 flex flex-col justify-center items-center gap-8">
               <Link
                 href="/work"
-                className="text-4xl font-normal"
+                className="text-[45px] font-normal"
                 onClick={() => setMenuOpen(false)}
               >
                 WORK
               </Link>
               <Link
                 href="/studio"
-                className="text-4xl font-normal"
+                className="text-[45px] font-normal"
                 onClick={() => setMenuOpen(false)}
               >
                 STUDIO
               </Link>
               <Link
                 href="/contact"
-                className="text-4xl font-normal"
+                className="text-[45px] font-normal"
                 onClick={() => setMenuOpen(false)}
               >
                 CONTACT
               </Link>
             </div>
-            <div className="border-t mt-auto">
-              <p className="text-center text-gray-400 py-4 text-sm tracking-wide">
+            <div className="border-t border-t-gray-400 m-4 mt-auto">
+              <p className="text-center text-gray-400 py-4 tracking-wide">
                 FORGING BRANDS THAT ENDURE
               </p>
             </div>

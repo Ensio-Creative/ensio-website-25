@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="bg-white text-black">
       <section className="max-w-7xl mx-auto md:py-32 py-18 px-4">
-        <h1 className="text-[40px] md:text-[90px] md:leading-20 max-w-6xl">
+        <h1 className="text-[50px] md:text-[90px] md:leading-20 leading-12 max-w-6xl">
           ENDURING BRANDS AREN&apos;T FOUND - THEY&apos;RE FORGED. {" "}
           <br className="hidden md:block" />
           WE HELP BRANDS BECOME TIMELESS.

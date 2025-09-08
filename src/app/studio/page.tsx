@@ -114,7 +114,7 @@ const studio = () => {
               alt="Gabriel Ugochukwu"
               className="w-full h-[500px] object-cover mb-4"
             />
-            <div className="">
+            <div className="mt-2">
               <div className="font-bold text-xl tracking-widest">
                 GABRIEL UGOCHUKWU
               </div>
@@ -123,13 +123,13 @@ const studio = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col md:mt-0 mt-4">
             <img
               src="/images/founders/rhema.png"
               alt="Rhema Borico"
               className="w-full h-[500px] object-cover mb-4"
             />
-            <div className="">
+            <div className="mt-2">
               <div className="font-bold text-xl tracking-widest">
                 RHEMA BORICO
               </div>
