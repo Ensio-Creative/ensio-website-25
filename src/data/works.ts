@@ -230,14 +230,14 @@ export const works = [
     title: "South Atlantic Offshore",
     image: "/images/works/south-atlantic.png",
     description: `
-      < h2 class= "text-2xl mb-2" > The Challenge</ h2 >
-  <p class="mb-4 text-lg" > South Atlantic Offshore was a new player entering the critical offshore oil and gas services market.They needed a brand identity built from the ground up that would immediately convey trust, strength, and a forward - looking approach.The identity had to perfectly align with their name, boldly project their vision, and demonstrate their unwavering commitment to excellence.For them, launching with a meticulously crafted brand wasn't just an advantage—it was essential for establishing their market position and achieving their future aspirations.</p>
+      <h2 class= "text-2xl mb-2"> The Challenge</h2>
+  <p class="mb-4 text-lg"> South Atlantic Offshore was a new player entering the critical offshore oil and gas services market.They needed a brand identity built from the ground up that would immediately convey trust, strength, and a forward - looking approach.The identity had to perfectly align with their name, boldly project their vision, and demonstrate their unwavering commitment to excellence.For them, launching with a meticulously crafted brand wasn't just an advantage—it was essential for establishing their market position and achieving their future aspirations.</p>
 
-    < h2 class="text-2xl mb-2" > Crafting a Distinctive Identity </h2>
-      < p class="mb-4 text-lg" > We created a brand identity that powerfully embodies strength and forward momentum, drawing inspiration from the ocean and engineering.Key elements included a dynamic logo, a professional marine - toned color palette, and clean typography.We then comprehensively applied this new identity across all brand touchpoints—from uniforms and presentation templates to on - site branding materials and safety signage—ensuring a consistent and impactful presence for South Atlantic Offshore.</p>
+    <h2 class="text-2xl mb-2"> Crafting a Distinctive Identity </h2>
+      <p class="mb-4 text-lg"> We created a brand identity that powerfully embodies strength and forward momentum, drawing inspiration from the ocean and engineering.Key elements included a dynamic logo, a professional marine - toned color palette, and clean typography.We then comprehensively applied this new identity across all brand touchpoints—from uniforms and presentation templates to on - site branding materials and safety signage—ensuring a consistent and impactful presence for South Atlantic Offshore.</p>
 
-        < h2 class="text-2xl mb-2" > A Brand Built for Excellence </h2>
-          < p class= "mb-4 text-lg" > The South Atlantic Offshore identity now powerfully reflects the company's strength, forward momentum, and unwavering commitment to offshore excellence. This bold and consistent brand presence clearly represents their mission to push boundaries in the oil and gas sector.</p>
+        <h2 class="text-2xl mb-2"> A Brand Built for Excellence </h2>
+          <p class= "mb-4 text-lg"> The South Atlantic Offshore identity now powerfully reflects the company's strength, forward momentum, and unwavering commitment to offshore excellence. This bold and consistent brand presence clearly represents their mission to push boundaries in the oil and gas sector.</p>
             `,
     link: "south-atlantic-offshore",
     industry: "Oil & Gas",

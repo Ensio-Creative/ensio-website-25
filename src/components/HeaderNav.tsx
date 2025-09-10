@@ -86,7 +86,7 @@ const HeaderNav = () => {
                 </span>
               </button>
             </div>
-            <div className="flex-1 flex flex-col justify-center items-center gap-8">
+            <div className="flex-1 flex flex-col justify-center items-center gap-1">
               <Link
                 href="/work"
                 className="text-[45px] font-normal"

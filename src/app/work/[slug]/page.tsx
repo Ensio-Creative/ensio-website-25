@@ -79,13 +79,13 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
         <img
           src={`/images/projects/${work.link}/cover-img.png `}
           alt={work.title}
-          className="w-full md:h-auto object-cover h-80 mb-12 col-span-2"
+          className="w-full md:h-auto object-cover h-64 mb-12 col-span-2"
         />
         <div className="md:mb-12 mb-10">
           <p className="text-lg md:text-wrap text-nowrap">PROJECT OVERVIEW</p>
 
           <div className="md:flex flex-col justify-end h-full md:-mt-10 mt-10 w-full">
-            <p className="md:text-base text-sm md:text-wrap text-nowrap uppercase">
+            <p className="md:text-base text-sm md:text-wrap text-pretty uppercase">
               <strong>Industry</strong> <br /> {work.industry}
             </p>
             <p className="text-sm md:text-base uppercase md:text-wrap text-pretty mt-4">

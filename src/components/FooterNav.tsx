@@ -14,17 +14,17 @@ const FooterNav = () => {
           LET&apos;S TALK
         </button>
       </Link>
-      <div className="flex justify-center md:space-x-12 space-x-3 text-sm my-10">
-        <a href="#" className="hover:underline">
+      <div className="flex justify-center md:space-x-12 space-x-3 md:text-sm text-xs my-10">
+        <a href="https://facebook.com/ensiocreative" target="_blank" className="hover:underline">
           FACEBOOK
         </a>
-        <a href="#" className="hover:underline">
+        <a href="https://instagram.com/ensiocreative" target="_blank" className="hover:underline">
           INSTAGRAM
         </a>
-        <a href="#" className="hover:underline">
+        <a href="https://x.com/ensio_creative" target="_blank" className="hover:underline">
           X (TWITTER)
         </a>
-        <a href="#" className="hover:underline">
+        <a href="https://linkedin.com/company/ensiocreative" target="_blank" className="hover:underline">
           LINKEDIN
         </a>
       </div>

@@ -115,10 +115,10 @@ const studio = () => {
               className="w-full h-[500px] object-cover mb-4"
             />
             <div className="mt-2">
-              <div className="font-bold text-xl tracking-widest">
+              <div className="font-bold md:text-xl tracking-widest">
                 GABRIEL UGOCHUKWU
               </div>
-              <div className="text-lg text-gray-500">
+              <div className="md:text-lg text-sm text-gray-500">
                 FOUNDER & STRATEGY DIRECTOR
               </div>
             </div>
@@ -130,10 +130,10 @@ const studio = () => {
               className="w-full h-[500px] object-cover mb-4"
             />
             <div className="mt-2">
-              <div className="font-bold text-xl tracking-widest">
+              <div className="font-bold md:text-xl tracking-widest">
                 RHEMA BORICO
               </div>
-              <div className="text-lg text-gray-500">CO-FOUNDER</div>
+              <div className="md:text-lg text-sm text-gray-500">CO-FOUNDER</div>
             </div>
           </div>
         </div>
