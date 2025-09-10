@@ -30,7 +30,7 @@ const studio = () => {
         <Marquee>
           {[1, 2, 3, 4, 5, 6].map((item) => (
             <img
-              className="mx-2 md:h-auto h-80"
+              className="mx-2 md:h-auto h-96"
               key={item}
               src={`/images/slide/img-${item}.png`}
             />
@@ -110,7 +110,7 @@ const studio = () => {
           </div>
           <div className="flex flex-col">
             <img
-              src="/images/founders/gabriel.png"
+              src="/images/founders/gabriel.jpg"
               alt="Gabriel Ugochukwu"
               className="w-full h-[500px] object-cover mb-4"
             />
@@ -125,7 +125,7 @@ const studio = () => {
           </div>
           <div className="flex flex-col md:mt-0 mt-4">
             <img
-              src="/images/founders/rhema.png"
+              src="/images/founders/rhema.jpg"
               alt="Rhema Borico"
               className="w-full h-[500px] object-cover mb-4"
             />
