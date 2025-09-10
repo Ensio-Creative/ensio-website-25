@@ -13,7 +13,7 @@ const HeaderNav = () => {
           <img
             src="/images/ensio-creative-logo-black.svg"
             alt="EnsioCreative Logo"
-            className="my-auto"
+            className="my-auto md:w-auto w-44"
           />
         </Link>
         {/* Desktop Nav */}
@@ -62,7 +62,7 @@ const HeaderNav = () => {
                 <img
                   src="/images/ensio-creative-logo-black.svg"
                   alt="EnsioCreative Logo"
-                  className="my-auto"
+                  className="my-auto md:w-auto w-44"
                 />
               </Link>
               <button
