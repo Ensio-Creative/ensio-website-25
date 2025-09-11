@@ -1,3 +1,15 @@
+export async function generateStaticParams() {
+  return [
+    { slug: "doklus-green" },
+    { slug: "tescat-engineering" },
+    { slug: "emmproff-integrated" },
+    { slug: "south-atlantic-offshore" },
+    { slug: "vicmorrow-foundation" },
+    { slug: "nonyworld-global-resources" },
+    { slug: "bonjuli" },
+    { slug: "un-properties" },
+  ];
+}
 import { Metadata } from 'next';
 
 export async function generateMetadata({
