@@ -1,6 +1,6 @@
-
-
 'use client'
+
+
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { Swiper, SwiperSlide } from "swiper/react";

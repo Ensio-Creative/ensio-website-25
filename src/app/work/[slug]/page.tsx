@@ -26,35 +26,39 @@ export async function generateMetadata({
   const metadata: Record<string, ProjectMetadata> = {
     "doklus-green": {
       title: "Doklus Green | Ensio Creative - Branding and Design Agency",
-      description: "Discover our branding work for Doklus Green - Innovative sustainable solutions through creative design.",
+      description: "Forging a sustainable identity. A comprehensive brand system that balances environmental responsibility with a powerful, market-ready presence.",
     },
     "tescat-engineering": {
       title: "Tescat Engineering | Ensio Creative - Branding and Design Agency",
-      description: "Explore our branding project for Tescat Engineering - Engineering excellence through visual identity.",
+      description: "Engineering precision and brand clarity. How we reshaped the visual identity to reflect leadership, technical excellence, and industrial strength.",
     },
     "emmproff-integrated": {
       title: "Emmproff Integrated | Ensio Creative - Branding and Design Agency",
-      description: "View our comprehensive branding work for Emmproff Integrated - Transforming businesses through design.",
+      description: "Building a legacy of excellence. Showcasing the architectural and construction portfolio of Emmproff through a refined digital experience and visual identity.",
     },
     "south-atlantic-offshore": {
       title: "South Atlantic Offshore | Ensio Creative - Branding and Design Agency",
-      description: "See how we helped South Atlantic Offshore establish a powerful brand identity in the maritime sector.",
+      description: "Strengthening a market leader. A strategic brand refresh designed to project reliability, impact, and global standards.",
     },
     "vicmorrow-foundation": {
       title: "Vicmorrow Foundation | Ensio Creative - Branding and Design Agency",
-      description: "Learn about our branding project for Vicmorrow Foundation - Making an impact through purposeful design.",
+      description: "Identity for impact. Developing a compassionate yet professional visual language and digital experience that clarifies the mission and amplifies the foundation’s reach.",
     },
     "nonyworld-global-resources": {
       title: "Nonyworld Global Resources | Ensio Creative - Branding and Design Agency",
-      description: "Discover our brand development work for Nonyworld Global Resources - Connecting resources worldwide.",
+      description: "Industrial excellence in height and surface protection. A strategic brand identity for Nonyworld Global, highlighting their expertise in Scaffolding, Rope Access, and Blasting/Painting services.",
     },
     "bonjuli": {
       title: "BonJuli | Ensio Creative - Branding and Design Agency",
-      description: "Experience our creative branding solution for BonJuli - Where style meets innovation.",
+      description: "Discover how we crafted an approachable yet premium presence. How we helped find a unique market edge through intentional, strategy-led brand identity design.",
     },
     "un-properties": {
       title: "UN Properties | Ensio Creative - Branding and Design Agency",
-      description: "View our brand identity work for UN Properties - Elevating real estate through design.",
+      description: "Redefining the real estate experience. A clean, sophisticated brand identity that drives trust and high-intent engagement in a competitive landscape.",
+    },
+    "ene": {
+      title: "ENE | Ensio Creative - Branding and Design Agency",
+      description: "Forging a new era for precision manufacturing. A comprehensive brand identity redesign for ENE Engineering following its transition to new ownership.",
     },
   };
 

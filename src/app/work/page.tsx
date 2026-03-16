@@ -4,6 +4,7 @@ import React from "react";
 
 export const metadata = {
   title: "Work | Ensio Creative - Branding and Design Agency",
+  description: "Explore our work. We craft brand expressions that accelerate growth"
 };
 
 const work = () => {

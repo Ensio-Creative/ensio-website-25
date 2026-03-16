@@ -1,5 +1,6 @@
 export const metadata = {
   title: "Studio | Ensio Creative - Branding and Design Agency",
+  description: "We are Ensio Creative, a strategy-led branding and design agency. We help brands find clarity, build meaningful connection, and drive purposeful growth beyond trends."
 };
 import React from "react";
 import Marquee from "react-fast-marquee";
