@@ -63,9 +63,33 @@ export async function generateMetadata({
     },
   };
 
+  const title = metadata[slug]?.title || "Work | Ensio Creative - Branding and Design Agency";
+  const description = metadata[slug]?.description || "Explore our portfolio of branding and design projects at Ensio Creative.";
+  const url = `https://ensiocreative.co/work/${slug}`;
+  const image = `/images/projects/${slug}/cover-img.png`;
   return {
-    title: metadata[slug]?.title || "Work | Ensio Creative - Branding and Design Agency",
-    description: metadata[slug]?.description || "Explore our portfolio of branding and design projects at Ensio Creative.",
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: [
+        {
+          url: image.startsWith('http') ? image : `https://ensiocreative.co${image}`,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image.startsWith('http') ? image : `https://ensiocreative.co${image}`],
+    },
   };
 }
 import React from "react";
@@ -148,7 +172,7 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
 
         {/* Share Buttons */}
         <div className='col-span-2'>
-          <ShareButtons url={`https://ensiocreative.com/work/${slug}`} />
+          <ShareButtons url={`https://ensiocreative.co/work/${slug}`} />
         </div>
       </div>
       <div className="md:mt-32 mt-14">
