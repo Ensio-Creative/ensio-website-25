@@ -335,7 +335,7 @@ export const works = [
       <p class="mb-4 lg:text-lg">We created a distinctive and memorable brand identity, which has already led to enhanced brand recognition and recall. Their refined image has made them instantly recognizable, significantly increasing top-of-mind awareness among potential clients and partners. This strategic branding has demonstrably translated into stronger market positioning, as their cohesive identity now clearly differentiates Emmproff from competitors and powerfully highlights their unique value proposition as experts in integrated design and construction solutions.</p>
       `,
     industry: "Architecture, Civil Engineering, Construction, Real Estate",
-    scope: "Brand Identity Design, Brand Rollout Support",
+    scope: "Brand Identity Design, Website Design",
     year: "2025",
     link: "emmproff-integrated",
     images: [
@@ -716,8 +716,8 @@ export const works = [
       <p class="mb-4 lg:text-lg">The newly crafted brand identity successfully addressed UN Properties' core challenge. By embracing a design that is distinctive yet timeless, UN Properties now commands a unique space in the real estate market. The identity was accompanied with a copy that made everything better and complete.</p>
     `,
     link: "un-properties",
-    industry: "Non-Profit, Humanitarian",
-    scope: "Brand Identity, Copywriting",
+    industry: "Real Estate, Construction",
+    scope: "Brand Identity, Copywriting, website design",
     year: "2022",
     images: [
       {
