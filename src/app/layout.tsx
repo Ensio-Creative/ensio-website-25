@@ -5,7 +5,7 @@ import FooterNav from "@/components/FooterNav";
 import Loader from "@/components/Loader";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ensiocreative.co"),
+  // metadataBase: new URL("https://ensiocreative.co"),
   title: "Ensio Creative | Branding and Design Agency - Forging Brands that Endure",
   description:
     "Ensio Creative is a strategy-led branding and design agency forging brands that endure. We partner with ambitious brands and visionary teams to sharpen positioning and build lasting influence.",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Ensio Creative",
     images: [
       {
-        url: "https://courageous-banoffee-a82470.netlify.app/og-image_044714.jpg",
+        url: "https://ensiocreative.co/og-image_044714.jpg",
         width: 1200,
         height: 630,
         alt: "EnsioCreative logo on black background",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ensio Creative | Branding and Design Agency - Forging Brands that Endure",
     description: "Ensio Creative is a strategy-led branding and design agency forging brands that endure. We partner with ambitious brands and visionary teams to sharpen positioning and build lasting influence.",
-    images: ["https://courageous-banoffee-a82470.netlify.app/og-image_044714.jpg"],
+    images: ["https://ensiocreative.co/og-image_044714.jpg"],
     site: "@ensiocreative"
   },
 };
