@@ -9,7 +9,7 @@ const ContactPage = () => (
   <main className="bg-white min-h-screen text-black">
     {/* Main Contact Section */}
     <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:py-20 py-10 px-4 items-start">
-      <h1 className="text-[50px] md:text-[70px] mb-8 uppercase">Work with Us</h1>
+      <h1 className="text-[50px] md:text-[70px] md:leading-18 leading-10 mb-8 uppercase">Work with Us</h1>
       <div className="flex flex-col gap-6 md:mt-8">
         <p className="text-lg">
           It all starts with a conversation to understand your goals and needs
