@@ -145,30 +145,34 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
           />
         </div>
         {work.images.map(
-          (single: { class: string; name: string }, index: number) => (
-            <div key={index} className={`${single.class} w-full md:my-0 my-3`}>
-              {single.name.includes('.mp4') ? (
-                <video
-                  className="w-full object-cover md:max-h-[575px]"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  controls={false}
-                >
-                  <source src={`/images/projects/${work.link}/${single.name}`} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ) : (
-                <img
-                  className="w-full h-full md:max-h-[575px] object-cover"
-                  src={`/images/projects/${work.link}/${single.name}.png`}
-                  alt=""
-                />
-              )}
-            </div>
-          )
+          (single: { class: string; name: string }, index: number) => {
+            const isColSpan2 = single.class.includes('col-span-2');
+            return (
+              <div key={index} className={`${single.class} w-full md:my-0 my-3`}>
+                {single.name.includes('.mp4') ? (
+                  <video
+                    className={`w-full object-cover md:max-h-[575px]${isColSpan2 ? ' img-col-span-2' : ''}`}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    controls={false}
+                  >
+                    <source src={`/images/projects/${work.link}/${single.name}`} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <img
+                    className={`w-full h-full md:max-h-[575px] object-cover${isColSpan2 ? ' img-col-span-2' : ''}`}
+                    src={`/images/projects/${work.link}/${single.name}.png`}
+                    alt=""
+                  />
+                )}
+              </div>
+            );
+          }
         )}
+
 
         {/* Share Buttons */}
         <div className='col-span-2'>

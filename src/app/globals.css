@@ -1,3 +1,5 @@
+/* Utility: Images in col-span-2 get 200px height on mobile, auto on md+ */
+
 @import "tailwindcss";
 
 /* Maison Neue font faces */
@@ -13,4 +15,14 @@
 
 body {
   font-family: 'Maison Neue' !important;
+}
+
+.img-col-span-2 {
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  .img-col-span-2 {
+    height: auto;
+  }
 }
