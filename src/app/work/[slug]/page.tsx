@@ -1,5 +1,6 @@
 export async function generateStaticParams() {
   return [
+    { slug: "ene" },
     { slug: "doklus-green" },
     { slug: "tescat-engineering" },
     { slug: "emmproff-integrated" },
@@ -68,6 +69,7 @@ export async function generateMetadata({
   };
 }
 import React from "react";
+import ShareButtons from "@/components/ShareButtons";
 import { works } from "@/data/works";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -98,11 +100,14 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
           className="w-full md:h-auto object-cover h-64 mb-12 col-span-2"
         />
         <div className="md:mb-12 mb-10">
-          <p className="text-lg md:text-wrap text-nowrap">PROJECT OVERVIEW</p>
+          {/* <p className="text-lg md:text-wrap text-nowrap">PROJECT OVERVIEW</p> */}
 
-          <div className="md:flex flex-col justify-end h-full md:-mt-10 mt-10 w-full">
+          <div className="w-full">
             <p className="md:text-base text-sm md:text-wrap text-pretty uppercase">
               <strong>Industry</strong> <br /> {work.industry}
+            </p>
+            <p className="text-sm md:text-base uppercase md:text-wrap text-pretty mt-4">
+              <strong>Year</strong> <br /> {work.year}
             </p>
             <p className="text-sm md:text-base uppercase md:text-wrap text-pretty mt-4">
               <strong>Scope of work</strong> <br /> {work.scope}
@@ -118,14 +123,33 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
         {work.images.map(
           (single: { class: string; name: string }, index: number) => (
             <div key={index} className={`${single.class} w-full md:my-0 my-3`}>
-              <img
-                className="w-full object-cover"
-                src={`/images/projects/${work.link}/${single.name}.png`}
-                alt=""
-              />
+              {single.name.includes('.mp4') ? (
+                <video
+                  className="w-full object-cover md:max-h-[575px]"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls={false}
+                >
+                  <source src={`/images/projects/${work.link}/${single.name}`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img
+                  className="w-full h-full md:max-h-[575px] object-cover"
+                  src={`/images/projects/${work.link}/${single.name}.png`}
+                  alt=""
+                />
+              )}
             </div>
           )
         )}
+
+        {/* Share Buttons */}
+        <div className='col-span-2'>
+          <ShareButtons url={`https://ensiocreative.com/work/${slug}`} />
+        </div>
       </div>
       <div className="md:mt-32 mt-14">
         {/* Next Project Preview */}
@@ -137,10 +161,10 @@ const SingleWork = async ({ params }: { params: Promise<{ slug: string }> }) => 
           return (
             <Link
               href={`/work/${nextWork.link}`}
-              className="block group pt-12 md:pb-12 border-t border-t-[#ECECEC]"
+              className="block group pt-12 md:pb-12 border-t border-t-[#000000]"
             >
               <div className="">
-                <span className="text-lg md:text-2xl">
+                <span className="text-lg md:text-xl uppercase">
                   Next Project - {nextWork.title}
                 </span>
 

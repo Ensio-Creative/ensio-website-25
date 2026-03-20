@@ -4,10 +4,10 @@ import React from "react";
 const FooterNav = () => {
   return (
     <footer id="contact" className="bg-black text-white mt-[90px] py-32 px-6 text-center">
-      <div className="text-[45px] md:text-[90px] mb-4">
-        HAVE
+      <div className="text-[45px] md:text-[90px] uppercase leading-tight mb-4">
+        Ready to DISCUSS
         <br />
-        AN IDEA?
+        YOUR PROJECT?
       </div>
       <Link href="/contact">
         <button className="border border-white rounded-full px-8 pt-4 pb-3 text-[40px] md:text-[90px] font-medium hover:bg-white hover:text-black transition mb-8">

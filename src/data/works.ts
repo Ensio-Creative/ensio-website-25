@@ -1,5 +1,169 @@
 export const works = [
   {
+    title: "Ene",
+    image: "/images/works/ene-billboard.png",
+    description: `
+      <h2 class="text-2xl mb-2">The Challenge</h2>
+      <p class="mb-4 text-lg">Following a change in ownership, ENE Engineering faced a critical identity crisis: the company’s visual presence felt "stuck in the past," failing to reflect the sophisticated, high-speed CNC technology now driving the facility. The legacy branding was inconsistent, relying on generic industrial imagery that lacked the authority they command in the advanced manufacturing sector. The new leadership needed to signal a transition from a traditional manufacturing operation to a high-precision engineering partner without losing the trust of long-term clients who valued their mechanical heritage.      </p>
+
+      <h2 class="text-2xl mb-2">Strategic Identity Modernization and Heritage Preservation</h2>
+      <p class="mb-4 text-lg">The rebranding strategy centered on "The Geometry of Precision". We developed a new visual identity anchored by a minimalist logo that utilizes negative space to suggest a drill bit’s path, symbolizing accuracy and movement. To preserve the brand's core DNA while modernizing its look, their initial black color was maintained, providing a solid, authoritative foundation that speaks to structural strength. To bridge the gap between digital and physical, the typography was updated to evoke a sense of stability and structural integrity across all corporate touchpoints.</p>
+
+      <h2 class="text-2xl mb-2">Driving Growth and Operational Excellence</h2>
+      <p class="mb-4 text-lg">The visual overhaul successfully repositioned ENE Engineering as a top-tier player in the CNC market. Within the first two quarters post-launch, the company saw a <strong>40% increase in RFQs (Request for Quotes)</strong> across the sectors they serve, specifically cited by procurement officers as a result of the professionalized digital presence through their website. Internally, the cohesive new identity boosted staff morale and streamlined production, as the standardized labeling and clean aesthetic fostered a more organized, "lean manufacturing" culture on the facility floor.</p>
+    `,
+    link: "ene",
+    industry: "ADVANCED MANUFACTURING",
+    scope: "VISUAL IDENTITY, Website Design",
+    year: "2025",
+    images: [
+      {
+        name: "ene1",
+        class: "col-span-2",
+      },
+      {
+        name: "ene2",
+        class: "col-span-2",
+      },
+      {
+        name: "ene3",
+        class: "",
+      },
+      {
+        name: "videos/ene4.mp4",
+        class: "",
+      },
+      {
+        name: "ene5",
+        class: "col-span-2",
+      },
+      {
+        name: "videos/ene6.mp4",
+        class: "col-span-2",
+      },
+      {
+        name: "ene7",
+        class: "col-span-2",
+      },
+      {
+        name: "videos/ene8.mp4",
+        class: "",
+      },
+      {
+        name: "ene9",
+        class: "",
+      },
+      {
+        name: "ene10",
+        class: "",
+      },
+      {
+        name: "videos/ene11.mp4",
+        class: "",
+      },
+      {
+        name: "ene12",
+        class: "col-span-2",
+      },
+      {
+        name: "ene13",
+        class: "col-span-2",
+      },
+      {
+        name: "ene14",
+        class: "",
+      },
+      {
+        name: "videos/ene15.mp4",
+        class: "",
+      },
+      {
+        name: "ene16",
+        class: "col-span-2",
+      },
+      {
+        name: "ene17",
+        class: "",
+      },
+      {
+        name: "ene18",
+        class: "",
+      },
+      {
+        name: "ene19",
+        class: "col-span-2",
+      },
+      {
+        name: "videos/ene20.mp4",
+        class: "",
+      },
+      {
+        name: "ene21",
+        class: "",
+      },
+      {
+        name: "ene22",
+        class: "",
+      },
+      {
+        name: "ene23",
+        class: "",
+      },
+      {
+        name: "ene24",
+        class: "col-span-2",
+      },
+      {
+        name: "ene25",
+        class: "",
+      },
+      {
+        name: "videos/ene26.mp4",
+        class: "",
+      },
+      {
+        name: "ene27",
+        class: "",
+      },
+      {
+        name: "ene28",
+        class: "",
+      },
+      {
+        name: "ene29",
+        class: "col-span-2",
+      },
+      {
+        name: "ene30",
+        class: "",
+      },
+      {
+        name: "ene31",
+        class: "",
+      },
+      {
+        name: "ene32",
+        class: "col-span-2",
+      },
+      {
+        name: "ene33",
+        class: "",
+      },
+      {
+        name: "ene34",
+        class: "",
+      },
+      {
+        name: "ene35",
+        class: "col-span-2",
+      },
+      {
+        name: "ene36",
+        class: "col-span-2",
+      },
+    ],
+  },
+  {
     title: "Doklus Green",
     image: "/images/works/doklus.png",
     description: `
@@ -15,6 +179,7 @@ export const works = [
       `,
     industry: "Energy, Real Estate",
     scope: "Brand Strategy, Rebranding, Website Design",
+    year: "2025",
     link: "doklus-green",
     images: [
       {
@@ -99,6 +264,7 @@ export const works = [
     `,
     link: "tescat-engineering",
     industry: "Engineering Services",
+    year: "2025",
     scope: "Brand Identity Design, Website Design",
     images: [
       {
@@ -170,6 +336,7 @@ export const works = [
       `,
     industry: "Architecture, Civil Engineering, Construction, Real Estate",
     scope: "Brand Identity Design, Brand Rollout Support",
+    year: "2025",
     link: "emmproff-integrated",
     images: [
       {
@@ -224,6 +391,18 @@ export const works = [
         name: "img13",
         class: "col-span-2",
       },
+      {
+        name: "img14",
+        class: "col-span-2",
+      },
+      {
+        name: "img15",
+        class: "",
+      },
+      {
+        name: "img16",
+        class: "",
+      }
     ],
   },
   {
@@ -241,6 +420,7 @@ export const works = [
             `,
     link: "south-atlantic-offshore",
     industry: "Oil & Gas",
+    year: "2025",
     scope: "Brand Identity Design",
     images: [
       {
@@ -296,6 +476,7 @@ export const works = [
     `,
     link: "vicmorrow-foundation",
     industry: "Non-Profit, Humanitarian",
+    year: "2024",
     scope: "Brand Identity, Website Design, Verbal Identity",
     images: [
       {
@@ -372,6 +553,7 @@ export const works = [
     `,
     link: "nonyworld-global-resources",
     industry: "OIL & GAS, CONSTRUCTION",
+    year: "2025",
     scope: "Brand Identity, Verbal Identity, Logo Design, Website Design",
     images: [
       {
@@ -452,6 +634,7 @@ export const works = [
     link: "bonjuli",
     industry: "Real Estate",
     scope: "Brand Identity, Brand Collateral",
+    year: "2022",
     images: [
       {
         name: "img1",
@@ -535,6 +718,7 @@ export const works = [
     link: "un-properties",
     industry: "Non-Profit, Humanitarian",
     scope: "Brand Identity, Copywriting",
+    year: "2022",
     images: [
       {
         name: "img1",
@@ -573,5 +757,5 @@ export const works = [
         class: "col-span-2",
       },
     ],
-  },
+  }
 ];

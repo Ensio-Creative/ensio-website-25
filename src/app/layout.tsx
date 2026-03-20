@@ -5,6 +5,7 @@ import FooterNav from "@/components/FooterNav";
 import Loader from "@/components/Loader";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ensiocreative.co"),
   title: "Ensio Creative | Branding and Design Agency - Forging Brands that Endure",
   description:
     "Ensio Creative is a strategy-led branding and design agency forging brands that endure. We partner with ambitious brands and visionary teams to sharpen positioning and build lasting influence.",
