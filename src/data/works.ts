@@ -4,17 +4,17 @@ export const works = [
     image: "/images/works/ene-billboard.png",
     description: `
       <h2 class="text-2xl mb-2">The Challenge</h2>
-      <p class="mb-4 lg:text-lg">Following a change in ownership, ENE Engineering faced a critical identity crisis: the company’s visual presence felt "stuck in the past," failing to reflect the sophisticated, high-speed CNC technology now driving the facility. The legacy branding was inconsistent, relying on generic industrial imagery that lacked the authority they command in the advanced manufacturing sector. The new leadership needed to signal a transition from a traditional manufacturing operation to a high-precision engineering partner without losing the trust of long-term clients who valued their mechanical heritage.      </p>
+      <p class="mb-4 lg:text-lg">Following a change in ownership, UK-based ENE Engineering faced a pivotal turning point. The company's visual presence felt rooted in the past — failing to reflect the sophisticated, high-speed CNC technology now driving its operations. Legacy branding failed to reflect the precision and authority ENE commanded in the advanced manufacturing sector. New leadership needed to signal a clear transition without alienating the long-term clients who valued the company's mechanical heritage.       </p>
+    
+      <h2 class="text-2xl mb-2">Precision by Design</h2>
+      <p class="mb-4 lg:text-lg">The rebranding strategy was built around a single guiding concept: The Geometry of Precision. A new brand identity was developed, anchored by a minimalist logo that uses negative space to trace a drill bit's path — symbolizing both accuracy and motion. To preserve the brand's core DNA while modernizing its look, the original black color palette was retained, lending a solid, authoritative foundation that speaks to structural strength. Typography was also updated to bridge the gap between digital and physical — evoking stability and structural integrity across every corporate touchpoint.      </p>
 
-      <h2 class="text-2xl mb-2">Strategic Identity Modernization and Heritage Preservation</h2>
-      <p class="mb-4 lg:text-lg">The rebranding strategy centered on "The Geometry of Precision". We developed a new visual identity anchored by a minimalist logo that utilizes negative space to suggest a drill bit’s path, symbolizing accuracy and movement. To preserve the brand's core DNA while modernizing its look, their initial black color was maintained, providing a solid, authoritative foundation that speaks to structural strength. To bridge the gap between digital and physical, the typography was updated to evoke a sense of stability and structural integrity across all corporate touchpoints.</p>
-
-      <h2 class="text-2xl mb-2">Driving Growth and Operational Excellence</h2>
-      <p class="mb-4 lg:text-lg">The visual overhaul successfully repositioned ENE Engineering as a top-tier player in the CNC market. Within the first two quarters post-launch, the company saw a <strong>40% increase in RFQs (Request for Quotes)</strong> across the sectors they serve, specifically cited by procurement officers as a result of the professionalized digital presence through their website. Internally, the cohesive new identity boosted staff morale and streamlined production, as the standardized labeling and clean aesthetic fostered a more organized, "lean manufacturing" culture on the facility floor.</p>
+      <h2 class="text-2xl mb-2">Impact and Growth</h2>
+      <p class="mb-4 lg:text-lg">The visual overhaul successfully repositioned ENE Engineering as a top-tier player in the CNC market. Within the first two quarters following launch, the company recorded a <strong class="font-bold"> 40% increase in RFQs (Requests for Quotes) </strong> across its target sectors — an outcome procurement officers directly attributed to ENE's professionalized digital presence.      </p>
     `,
     link: "ene",
     industry: "ADVANCED MANUFACTURING",
-    scope: "VISUAL IDENTITY, Website Design",
+    scope: "Brand IDENTITY, Website Design",
     year: "2025",
     images: [
       {
