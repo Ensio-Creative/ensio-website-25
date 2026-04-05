@@ -59,7 +59,7 @@ export async function generateMetadata({
     },
     "ene": {
       title: "ENE | Ensio Creative - Branding and Design Agency",
-      description: "Forging a new era for precision manufacturing. A comprehensive brand identity redesign for ENE Engineering following its transition to new ownership.",
+      description: "Forging a new era for a CNC precision engineering company. A complete brand identity for ENE Engineering, built from the ground up following a change in ownership.",
     },
   };
 
